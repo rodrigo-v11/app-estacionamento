@@ -1,0 +1,228 @@
+/* Estilos principais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0000006f;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Para centralizar o conteúdo */
+    width: 100vw;
+    height: 100vh;
+    
+    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+
+}
+
+/* Container principal */
+.container {
+    align-items: center;
+    width: 100%;
+    max-width: 80%; /* Limita a largura máxima */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo leve para contraste */
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+
+/* Estilo dos títulos */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+    width: 90%; /* Largura completa */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Links */
+a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Carros (lista de veículos) */
+.containerCarros{
+    width: 100%;
+    max-width: 80%; /* Limita a largura máxima */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo leve para contraste */
+    border-radius: 8px;
+    margin-top: 300px;
+}
+.carros {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carros h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.carros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carros li {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carros li h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.carros li p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.carros li button {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carros li button:hover {
+    background-color: #c82333;
+}
+
+/* Estilo do container da lista de usuários */
+.users {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.users ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.users li {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.users li h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.users li p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilo do login */
+.login {
+    margin-top: 10%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login button:hover {
+    background-color: #218838;
+}
+
+.login a {
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
