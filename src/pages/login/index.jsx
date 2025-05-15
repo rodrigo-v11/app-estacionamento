@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import api from "../../services/api";
 import { useNavigate } from "react-router-dom";
-import '../../styles.css';
+import styles from './Login.module.css'; // Import css modules stylesheet as styles
 
 function Login() {
     const inputEmail = useRef();
@@ -29,14 +29,14 @@ function Login() {
     }
 
         return (
-            <div className="container">
+            <div className={styles.Login}>
                 <h1>Login</h1>
                 <form onSubmit={handleSubmit}>
                     <input ref={inputEmail} placeholder="Email:" type="email" required />
                     <input ref={inputPassword} type="password" placeholder="Senha:" required />
                     <button type="submit">Entrar</button>
                 </form>
-                <a href="/">Não tem cadastro? Crie sua conta!</a>
+                <a href="/Cadastro">Não tem cadastro?  Crie sua conta!</a>
             </div>
         );
 }

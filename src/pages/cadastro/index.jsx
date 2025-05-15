@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import api from "../../services/api";
 import { useNavigate } from "react-router-dom";
-import '../../styles.css';
+import styles from './cadastro.module.css'; // Import css modules stylesheet as styles
+
 
 function Cadastro (){
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ function Cadastro (){
     }
 
 return (
-    <div className="containerCadastro">
+    <div className={styles.containerCadastro}>
         <h1>Cadastro</h1>
         <form onSubmit={handleSubmit}>
             <input ref={inputName} placeholder="Nome" type="text" required />
